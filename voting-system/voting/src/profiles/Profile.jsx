@@ -58,7 +58,7 @@ function CandidateProfile() {
             {data.map((d, index) => (
               <div key={index} className="p-4"> {/* Added padding to create space between cards */}
                 <div className="bg-white h-[450px] text-black rounded-xl shadow-lg"> {/* Added shadow for better card distinction */}
-                  <div className="h-56 rounded-t-xl bg-blue-900 flex justify-center items-center">
+                  <div className="h-56 rounded-t-xl bg-slate-700 flex justify-center items-center">
                     <img src={d.img} alt={d.name} className="h-44 w-44 rounded-full" />
                   </div>
                   <div className="flex flex-col justify-center gap-4 p-4">
@@ -66,7 +66,7 @@ function CandidateProfile() {
                     <p>{d.review}</p>
                     <div className="flex justify-center">
                       <button
-                        className="bg-blue-900 text-white text-lg px-6 py-1 rounded-xl"
+                        className="bg-slate-700 text-white text-lg px-6 py-1 rounded-xl"
                         onClick={() => navigate(d.route)}
                       >
                         View
